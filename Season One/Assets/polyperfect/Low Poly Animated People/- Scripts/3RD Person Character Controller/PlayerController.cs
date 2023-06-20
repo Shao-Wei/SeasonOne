@@ -55,6 +55,7 @@ namespace Polyperfect.People
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
                 rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                Debug.Log("Jump");
             }
 
             float horizontal = Input.GetAxis("Mouse X") * Time.deltaTime;
